@@ -1,15 +1,33 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="200dp"
     tools:context=".FragmentTwo"
-    android:background="@android:color/holo_orange_dark">
+    android:background="@android:color/holo_orange_dark"
+    android:orientation="vertical">
 
-    <!-- TODO: Update blank fragment layout -->
     <TextView
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="@string/hello_blank_fragment" />
+        android:layout_height="wrap_content"
+        android:text=""
+        android:textSize="24sp"
+        android:textColor="@android:color/white"/>
 
-</FrameLayout>
+    <EditText
+        android:id="@+id/editText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="enter text"
+        android:textSize="24sp"
+        android:textColor="@android:color/white"/>
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Mandar texto a Activity"
+        android:textSize="24sp"
+        android:textColor="@android:color/black"/>
+
+</LinearLayout>
